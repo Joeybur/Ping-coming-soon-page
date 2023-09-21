@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.25rem;
+  font-family: "Libre Franklin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  text-align: center;
+}
+
+.main-section {
+  width: 320px;
+}
+
+.logo {
+  width: 50px;
+  margin-bottom: 2rem;
+}
+
+.main-section h1 {
+  font-size: 1.5rem;
+  color: var(--Gray);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.main-section h1 strong {
+  color: black;
+}
+
+.main-section h2 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.interactive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.email {
+  width: 280px;
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 2rem;
+  border: 1px solid var(--Pale-Blue);
+}
+
+.email::placeholder {
+  color: var(--Pale-Blue);
+}
+
+.error-msg {
+  display: none;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: var(--Light-Red);
+  margin-bottom: 1rem;
+  padding-top: 0.3rem;
+}
+
+.button {
+  width: 280px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--Blue);
+  border: none;
+  font-family: inherit;
+  color: #fff;
+}
+
+.button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.hero-img {
+  margin-top: 4rem;
+  display: block;
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 7.5rem;
+}
+
+.fa-brands {
+  color: rgb(27, 48, 235);
+  padding: 1rem 0.5rem;
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.fa-brands:hover {
+  background-color: rgb(27, 48, 235);
+  color: #fff;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+@media (min-width: 45rem) {
+  .main-section {
+    width: 630px;
+  }
+
+  .main-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-section h2 {
+    font-size: 1rem;
+  }
+
+  .interactive {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+  }
+
+  .email {
+    width: 410px;
+    height: 50px;
+  }
+
+  form .button {
+    width: 240px;
+    height: 50px;
+    margin-top: unset;
+  }
+
+  .socials {
+    margin-top: 2em;
+  }
+
+  .fa-brands {
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    width: 70px;
+    margin-top: 1rem;
+  }
+  .error-msg {
+    position: relative;
+  }
+}
